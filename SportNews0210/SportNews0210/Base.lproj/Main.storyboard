@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SportNews0210" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2TB-TK-81M">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="0sF-DC-Un5">
+                                <rect key="frame" x="137" y="59" width="119" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="k7k-NW-tVR"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVb-yt-LMu">
+                                <rect key="frame" x="16" y="186" width="361" height="652"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Wju-2W-YYL">
+                                        <rect key="frame" x="122" y="524" width="116" height="26"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bV-Kj-PYB">
+                                        <rect key="frame" x="29" y="569" width="302" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Get Started">
+                                            <backgroundConfiguration key="background" image="bg_bt"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Jnr-bs-DL2" firstAttribute="bottom" secondItem="Wju-2W-YYL" secondAttribute="bottom" constant="102" id="0nx-lB-1Tq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wju-2W-YYL" secondAttribute="bottom" constant="102" id="8Pt-FZ-hkL"/>
+                                    <constraint firstItem="Wju-2W-YYL" firstAttribute="centerX" secondItem="rVb-yt-LMu" secondAttribute="centerX" id="MhR-ie-ubf"/>
+                                    <constraint firstItem="Wju-2W-YYL" firstAttribute="top" secondItem="Jnr-bs-DL2" secondAttribute="top" constant="524" id="Uu6-XZ-zT7"/>
+                                    <constraint firstItem="Wju-2W-YYL" firstAttribute="leading" secondItem="Jnr-bs-DL2" secondAttribute="leading" constant="122" id="Ys0-b1-Bfl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wju-2W-YYL" secondAttribute="trailing" constant="123" id="kei-Rh-ojE"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="uwN-h2-zxd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Jnr-bs-DL2"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="plg-tV-tQm"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2TB-TK-81M" firstAttribute="centerX" secondItem="rVb-yt-LMu" secondAttribute="centerX" id="0DC-X3-pPm"/>
+                            <constraint firstItem="0sF-DC-Un5" firstAttribute="centerX" secondItem="rVb-yt-LMu" secondAttribute="centerX" id="1ec-TY-mUQ"/>
+                            <constraint firstItem="2TB-TK-81M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="97g-v7-98X"/>
+                            <constraint firstItem="0sF-DC-Un5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="Cka-ay-Cb7"/>
+                            <constraint firstItem="2TB-TK-81M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dv9-h0-9xT"/>
+                            <constraint firstItem="2TB-TK-81M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P8a-Jx-iLA"/>
+                            <constraint firstItem="0sF-DC-Un5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TZh-5z-dfg"/>
+                            <constraint firstItem="rVb-yt-LMu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oDu-ya-FLU"/>
+                            <constraint firstItem="rVb-yt-LMu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qUX-GC-Hdz"/>
+                            <constraint firstItem="rVb-yt-LMu" firstAttribute="top" secondItem="0sF-DC-Un5" secondAttribute="bottom" constant="8" id="rzF-4B-VBf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="Wju-2W-YYL" id="aSc-rC-Cli"/>
+                        <outlet property="scrollView" destination="rVb-yt-LMu" id="2Pi-zB-SsR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1500" height="3248"/>
+        <image name="bg_bt" width="1256" height="200"/>
+        <image name="icon" width="384" height="384"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
