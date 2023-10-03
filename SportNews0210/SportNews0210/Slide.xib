@@ -14,33 +14,29 @@
             <rect key="frame" x="0.0" y="0.0" width="436" height="601"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jtB-sN-M1t">
-                    <rect key="frame" x="23" y="29" width="390" height="285"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="285" id="2ii-hc-5Un"/>
-                        <constraint firstAttribute="width" constant="393" id="ywL-ij-bH3"/>
-                    </constraints>
-                </imageView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Duplicate Apps: Call History, Notes, and more." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lR3-Lq-O64">
-                    <rect key="frame" x="76" y="314" width="284" height="128"/>
+                    <rect key="frame" x="50" y="481" width="336" height="120"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="128" id="KMC-1U-bPF"/>
+                        <constraint firstAttribute="height" constant="120" id="MFE-MH-5f6"/>
                     </constraints>
                     <color key="textColor" systemColor="systemBackgroundColor"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jtB-sN-M1t">
+                    <rect key="frame" x="0.0" y="92" width="436" height="369"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="jtB-sN-M1t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="4fg-tl-1hz"/>
-                <constraint firstItem="jtB-sN-M1t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="G7y-aM-lQO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lR3-Lq-O64" secondAttribute="bottom" constant="125" id="Jmo-LE-TPU"/>
-                <constraint firstItem="jtB-sN-M1t" firstAttribute="centerX" secondItem="lR3-Lq-O64" secondAttribute="centerX" id="ao9-IT-mmM"/>
-                <constraint firstItem="jtB-sN-M1t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="djw-Vo-5yD"/>
-                <constraint firstItem="lR3-Lq-O64" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="76" id="eKe-5D-RDi"/>
-                <constraint firstItem="lR3-Lq-O64" firstAttribute="top" secondItem="jtB-sN-M1t" secondAttribute="bottom" id="g3p-2i-VdD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lR3-Lq-O64" secondAttribute="trailing" constant="50" id="00m-Ff-42N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jtB-sN-M1t" secondAttribute="trailing" id="6BU-NK-qRO"/>
+                <constraint firstAttribute="bottom" secondItem="lR3-Lq-O64" secondAttribute="bottom" id="Vs7-mQ-GnK"/>
+                <constraint firstItem="lR3-Lq-O64" firstAttribute="top" secondItem="jtB-sN-M1t" secondAttribute="bottom" constant="20" id="cJD-en-OiZ"/>
+                <constraint firstItem="lR3-Lq-O64" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="cp4-zr-zqK"/>
+                <constraint firstItem="jtB-sN-M1t" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="33" id="fIC-Iz-2tj"/>
+                <constraint firstItem="jtB-sN-M1t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iZS-XV-3CV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

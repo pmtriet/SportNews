@@ -169,6 +169,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
         
+    @IBAction func loginClicked(_ sender: UIButton) {
+        let SignInView = SignInViewController()
+        navigationController?.pushViewController(SignInView, animated: true)
+    }
         
     }
 
