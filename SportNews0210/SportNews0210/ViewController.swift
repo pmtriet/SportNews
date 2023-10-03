@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
-
+    
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
             scrollView.delegate = self
@@ -29,7 +29,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
         view.bringSubviewToFront(pageControl)
-    
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,7 +38,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func createSlides() -> [Slide] {
-
+        
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.imageView.image = UIImage(named: "item_preview1")
         slide1.textView.text = "1. Duplicate Apps: Call History, Notes, and more."
@@ -52,11 +53,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         slide3.imageView.image = UIImage(named: "item_preview3")
         slide3.textView.text = "3. Duplicate Apps: Call History, Notes, and more."
         
+        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide4.imageView.image = UIImage(named: "item_preview3")
+        slide4.textView.text = "4. Duplicate Apps: Call History, Notes, and more."
+        
+        let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options:  nil)?.first as! Slide
+        slide5.imageView.image = UIImage(named: "item_preview3")
+        slide5.textView.text = "5. Duplicate Apps: Call History, Notes, and more."
         
         
-       
         
-        return [slide1, slide2, slide3]
+        return [slide1, slide2, slide3, slide4, slide5]
     }
     
     
@@ -72,7 +79,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    
+    /*
+     * default function called when view is scolled. In order to enable callback
+     * when scrollview is scrolled, the below code needs to be called:
+     * slideScrollView.delegate = self or
+     */
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
@@ -120,7 +131,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     
     
-    
     func scrollView(_ scrollView: UIScrollView, didScrollToPercentageOffset percentageHorizontalOffset: CGFloat) {
         if(pageControl.currentPage == 0) {
             //Change background color to toRed: 103/255, fromGreen: 58/255, fromBlue: 183/255, fromAlpha: 1
@@ -158,7 +168,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         // return the fade colour
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
-
-
-}
+        
+        
+    }
 
