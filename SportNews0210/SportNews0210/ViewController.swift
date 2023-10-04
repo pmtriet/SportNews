@@ -118,7 +118,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
             slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
             slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
-            
         } else if(percentOffset.x > 0.50 && percentOffset.x <= 0.75) {
             slides[2].imageView.transform = CGAffineTransform(scaleX: (0.75-percentOffset.x)/0.25, y: (0.75-percentOffset.x)/0.25)
             slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.75, y: percentOffset.x/0.75)
