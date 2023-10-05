@@ -17,6 +17,8 @@
 		A5B888712ACAC75B004A8732 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B888702ACAC75B004A8732 /* Slide.xib */; };
 		A5B888782ACD4338004A8732 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B888762ACD4338004A8732 /* SignInViewController.swift */; };
 		A5B888792ACD4338004A8732 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B888772ACD4338004A8732 /* SignInViewController.xib */; };
+		A5B8887C2ACE55D3004A8732 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8887A2ACE55D3004A8732 /* SignUpViewController.swift */; };
+		A5B8887D2ACE55D3004A8732 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B8887B2ACE55D3004A8732 /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		A5B888702ACAC75B004A8732 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		A5B888762ACD4338004A8732 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A5B888772ACD4338004A8732 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		A5B8887A2ACE55D3004A8732 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A5B8887B2ACE55D3004A8732 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				A5B888702ACAC75B004A8732 /* Slide.xib */,
 				A5B888762ACD4338004A8732 /* SignInViewController.swift */,
 				A5B888772ACD4338004A8732 /* SignInViewController.xib */,
+				A5B8887A2ACE55D3004A8732 /* SignUpViewController.swift */,
+				A5B8887B2ACE55D3004A8732 /* SignUpViewController.xib */,
 			);
 			path = SportNews0210;
 			sourceTree = "<group>";
@@ -141,6 +147,7 @@
 				A5B8885F2ACAA2EB004A8732 /* LaunchScreen.storyboard in Resources */,
 				A5B8885C2ACAA2EB004A8732 /* Assets.xcassets in Resources */,
 				A5B8885A2ACAA2E9004A8732 /* Main.storyboard in Resources */,
+				A5B8887D2ACE55D3004A8732 /* SignUpViewController.xib in Resources */,
 				A5B888712ACAC75B004A8732 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B8887C2ACE55D3004A8732 /* SignUpViewController.swift in Sources */,
 				A5B888572ACAA2E9004A8732 /* ViewController.swift in Sources */,
 				A5B888532ACAA2E9004A8732 /* AppDelegate.swift in Sources */,
 				A5B888552ACAA2E9004A8732 /* SceneDelegate.swift in Sources */,
