@@ -9,9 +9,11 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var backgroundSignUpVIew: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        backgroundSignUpVIew.layer.cornerRadius = 50
         // Do any additional setup after loading the view.
     }
 
