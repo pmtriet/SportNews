@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+
+struct UserInputData {
+    var email: String
+    var password: String
+}
