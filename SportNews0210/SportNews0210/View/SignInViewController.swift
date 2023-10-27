@@ -10,6 +10,8 @@ import UIKit
 class SignInViewController: UIViewController {
 
     
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var createAccountLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,30 @@ class SignInViewController: UIViewController {
         
     }
     
+    @IBAction func signInButtonTapped(_ sender: Any) {
+        guard let email = userNameTextField.text, let password = passwordTextField.text else {
+                    return
+                }
+                
+                let user = UserInputData(email: email, password: password)
+                
+                AuthViewModel.shared.login(user: user) { result in
+                    switch result {
+                    case .success(let user):
+                        print("(\(user) login success")
+                        let alert = UIAlertController(title: "Notification", message: "Login success", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                        break
+                        // Đăng ký thành công, thực hiện xử lý tiếp theo
+                    case .failure(let error):
+                        // Xử lý lỗi
+                        print("Error: \(error.localizedDescription)")
+                    }
+                }
+            }
+    
+
     @objc func labelTapped() {
         let signUp = SignUpViewController()
         navigationController?.pushViewController(signUp, animated: true)
