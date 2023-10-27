@@ -45,6 +45,17 @@ class SignInViewController: UIViewController {
                         let alert = UIAlertController(title: "Notification", message: "Login success", preferredStyle: UIAlertController.Style.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
+//                        let sceneDelegate = SceneDelegate()
+//                        sceneDelegate.setupRootViewTabbar()
+
+                                
+                       
+                        if let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+                           // to do
+                            scene.setupRootViewTabbar()
+                        }
+                        
+                        
                         break
                         // Đăng ký thành công, thực hiện xử lý tiếp theo
                     case .failure(let error):

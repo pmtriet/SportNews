@@ -85,7 +85,7 @@
         <!--Navigation Controller-->
         <scene sceneID="CyF-cV-UTK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nla-Lg-pKV" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="idNavigationWelcome" automaticallyAdjustsScrollViewInsets="NO" id="Nla-Lg-pKV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="background" backIndicatorImage="background" id="uhQ-6u-Hrp">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

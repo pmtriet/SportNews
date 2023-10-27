@@ -7,16 +7,66 @@
 
 import UIKit
 
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
+    var navigationWelcome : UINavigationController?
+    var tabbarController : UITabBarController?
+    
     var window: UIWindow?
+    
+    func createTabBarControllerAndWelcome()
+    {
+        
+//        let tabBarController = UITabBarController()
+        let tabbarController = UITabBarController()
+        // Create View Controllers for the tabs
+        let homeViewController = HomeViewController()
+        homeViewController.view.backgroundColor = .red
+        homeViewController.title = "Home"
+        let navController1 = UINavigationController(rootViewController: homeViewController)
+        
+        let browserViewController = BrowserViewController()
+        browserViewController.view.backgroundColor = .blue
+        browserViewController.title = "Browser"
+        let navController2 = UINavigationController(rootViewController: browserViewController)
+        
+        let profilesViewController = ProfilesViewController()
+//        profilesViewController.view.backgroundColor = .white
+        profilesViewController.title = "Profiles"
+        let navController3 = UINavigationController(rootViewController: profilesViewController)
+        
+        // Set the view controllers for the tab bar controller
+        tabbarController.viewControllers = [navController1, navController2, navController3]
+        self.tabbarController = tabbarController
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        self.navigationWelcome = storyboard.instantiateViewController(withIdentifier: "idNavigationWelcome") as? UINavigationController
+    }
 
+    
+    func setupRootViewTabbar() {
+//        createTabBarController()
+            //Setup Your Root Here
+        window?.rootViewController  = self.tabbarController
+            //window?.rootViewController = objNavigationVC
+        window?.makeKeyAndVisible()
+        }
+    func setupRootViewWelcome() {
+            //Setup Your Root Here
+        window?.rootViewController  = self.navigationWelcome
+            //window?.rootViewController = objNavigationVC
+        window?.makeKeyAndVisible()
+        }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        self.createTabBarControllerAndWelcome()
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
