@@ -143,7 +143,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfQ-0I-dbw">
-                            <rect key="frame" x="50" y="532.33333333333337" width="293" height="21"/>
+                            <rect key="frame" x="50" y="522.33333333333337" width="293" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Vyn-dP-bTk"/>
                             </constraints>
@@ -183,7 +183,7 @@
                         <constraint firstItem="lqE-WJ-M9I" firstAttribute="centerY" secondItem="iMD-Sl-Wct" secondAttribute="centerY" id="Dvh-h4-Mvv"/>
                         <constraint firstItem="X9s-pI-Ypt" firstAttribute="leading" secondItem="7Oa-Ri-VH5" secondAttribute="leading" constant="54" id="FRE-og-ooG"/>
                         <constraint firstItem="pfQ-0I-dbw" firstAttribute="leading" secondItem="7Oa-Ri-VH5" secondAttribute="leading" constant="50" id="Fb5-hi-ogX"/>
-                        <constraint firstItem="pfQ-0I-dbw" firstAttribute="top" secondItem="PVJ-qA-56H" secondAttribute="bottom" constant="15" id="FzR-JG-qm0"/>
+                        <constraint firstItem="pfQ-0I-dbw" firstAttribute="top" secondItem="PVJ-qA-56H" secondAttribute="bottom" constant="5" id="FzR-JG-qm0"/>
                         <constraint firstItem="JuW-oL-c4c" firstAttribute="top" secondItem="7Oa-Ri-VH5" secondAttribute="top" constant="20" id="Ghs-eN-d3J"/>
                         <constraint firstItem="ELE-qm-N2I" firstAttribute="top" secondItem="X9s-pI-Ypt" secondAttribute="bottom" constant="5" id="HJD-xA-Qz9"/>
                         <constraint firstItem="3ZT-mK-9Kj" firstAttribute="top" secondItem="ELE-qm-N2I" secondAttribute="top" constant="14.5" id="HQY-3A-2Fe"/>

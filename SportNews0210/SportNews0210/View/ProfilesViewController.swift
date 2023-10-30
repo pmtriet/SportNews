@@ -17,6 +17,7 @@ class ProfilesViewController: UIViewController {
 
 
     @IBAction func buttonLogOutTapped(_ sender: Any) {
+        AuthViewModel.shared.signOut()
         if let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
            // to do
             scene.setupRootViewWelcome()

@@ -17,9 +17,15 @@ class SignUpViewController: UIViewController {
         
 //        backgroundSignUpVIew.layer.cornerRadius = 50
         // Do any additional setup after loading the view.
+        
+        let hideTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(hideTapRecognizer)
     }
 
 
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
     
     @IBAction func buttonSignUpTapped(_ sender: Any) {
         guard let email = userNameTextField.text, let password = passwordTextField.text else {
@@ -35,6 +41,7 @@ class SignUpViewController: UIViewController {
                         let alert = UIAlertController(title: "Notification", message: "Sign up success", preferredStyle: UIAlertController.Style.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
+                        self.navigationController?.popViewController(animated: true)
                         break
                         // Đăng ký thành công, thực hiện xử lý tiếp theo
                     case .failure(let error):

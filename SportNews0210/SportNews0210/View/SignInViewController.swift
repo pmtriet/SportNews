@@ -29,6 +29,12 @@ class SignInViewController: UIViewController {
         createAccountLabel.addGestureRecognizer(tapGestureRecognizer)
         createAccountLabel.isUserInteractionEnabled = true
         
+        let hideTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(hideTapRecognizer)
+        
+    }
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func signInButtonTapped(_ sender: Any) {

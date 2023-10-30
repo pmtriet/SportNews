@@ -18,19 +18,33 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnK-E2-h5S">
-                    <rect key="frame" x="156" y="206" width="82" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnK-E2-h5S">
+                    <rect key="frame" x="155" y="783" width="82" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="PfX-MC-SCi"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Log out"/>
                     <connections>
                         <action selector="buttonLogOutTapped:" destination="-1" eventType="touchUpInside" id="ozl-VY-XSY"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="foK-KA-QcJ">
+                    <rect key="frame" x="0.0" y="67" width="393" height="699"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <constraints>
+                <constraint firstItem="foK-KA-QcJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2wA-aK-nyf"/>
+                <constraint firstItem="foK-KA-QcJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="G8I-7F-RYi"/>
+                <constraint firstItem="XnK-E2-h5S" firstAttribute="top" secondItem="foK-KA-QcJ" secondAttribute="bottom" constant="17" id="Q1W-JR-wMD"/>
+                <constraint firstItem="XnK-E2-h5S" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WGU-M3-VTe"/>
+                <constraint firstItem="foK-KA-QcJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="bsC-7I-ego"/>
+                <constraint firstItem="XnK-E2-h5S" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="vJO-ZM-OZU"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>

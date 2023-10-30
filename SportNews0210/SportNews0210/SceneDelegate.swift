@@ -22,18 +22,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabbarController = UITabBarController()
         // Create View Controllers for the tabs
         let homeViewController = HomeViewController()
-        homeViewController.view.backgroundColor = .red
-        homeViewController.title = "Home"
+//        homeViewController.view.backgroundColor = .red
+//        homeViewController.title = "Home"
+        homeViewController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
         let navController1 = UINavigationController(rootViewController: homeViewController)
         
         let browserViewController = BrowserViewController()
-        browserViewController.view.backgroundColor = .blue
-        browserViewController.title = "Browser"
+//        browserViewController.view.backgroundColor = .blue
+//        browserViewController.title = "Browser"
+        browserViewController.tabBarItem = UITabBarItem(title: "Browser", image: UIImage(named: "browser"), selectedImage: UIImage(named: "browser"))
         let navController2 = UINavigationController(rootViewController: browserViewController)
         
         let profilesViewController = ProfilesViewController()
 //        profilesViewController.view.backgroundColor = .white
-        profilesViewController.title = "Profiles"
+//        profilesViewController.title = "Profiles"
+        profilesViewController.tabBarItem = UITabBarItem(title: "Profiles", image: UIImage(named: "profiles"), selectedImage: UIImage(named: "profiles"))
         let navController3 = UINavigationController(rootViewController: profilesViewController)
         
         // Set the view controllers for the tab bar controller
