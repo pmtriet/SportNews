@@ -57,7 +57,6 @@
 		A5F167A52AEB599A007F12A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F167A32AEB599A007F12A4 /* HomeViewController.swift */; };
 		A5F167A62AEB599A007F12A4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F167A42AEB599A007F12A4 /* HomeViewController.xib */; };
 		A5F167A92AEB59C8007F12A4 /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F167A72AEB59C8007F12A4 /* ProfilesViewController.swift */; };
-		A5F167AA2AEB59C8007F12A4 /* ProfilesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F167A82AEB59C8007F12A4 /* ProfilesViewController.xib */; };
 		A5F167AD2AEB59DB007F12A4 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F167AB2AEB59DB007F12A4 /* BrowserViewController.swift */; };
 		A5F167AE2AEB59DB007F12A4 /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F167AC2AEB59DB007F12A4 /* BrowserViewController.xib */; };
 /* End PBXBuildFile section */
@@ -83,7 +82,6 @@
 		A5F167A32AEB599A007F12A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A5F167A42AEB599A007F12A4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A5F167A72AEB59C8007F12A4 /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
-		A5F167A82AEB59C8007F12A4 /* ProfilesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilesViewController.xib; sourceTree = "<group>"; };
 		A5F167AB2AEB59DB007F12A4 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		A5F167AC2AEB59DB007F12A4 /* BrowserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +191,6 @@
 				A5F167A32AEB599A007F12A4 /* HomeViewController.swift */,
 				A5F167A42AEB599A007F12A4 /* HomeViewController.xib */,
 				A5F167A72AEB59C8007F12A4 /* ProfilesViewController.swift */,
-				A5F167A82AEB59C8007F12A4 /* ProfilesViewController.xib */,
 				A5F167AB2AEB59DB007F12A4 /* BrowserViewController.swift */,
 				A5F167AC2AEB59DB007F12A4 /* BrowserViewController.xib */,
 			);
@@ -296,7 +293,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5B888792ACD4338004A8732 /* SignInViewController.xib in Resources */,
-				A5F167AA2AEB59C8007F12A4 /* ProfilesViewController.xib in Resources */,
 				A5B8885F2ACAA2EB004A8732 /* LaunchScreen.storyboard in Resources */,
 				A5B8885C2ACAA2EB004A8732 /* Assets.xcassets in Resources */,
 				A5B8885A2ACAA2E9004A8732 /* Main.storyboard in Resources */,

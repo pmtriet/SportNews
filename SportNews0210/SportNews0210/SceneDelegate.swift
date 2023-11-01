@@ -12,9 +12,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var navigationWelcome : UINavigationController?
     var tabbarController : UITabBarController?
-    
+ 
     var window: UIWindow?
     
+    
+
+
     func createTabBarControllerAndWelcome()
     {
         
@@ -33,7 +36,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         browserViewController.tabBarItem = UITabBarItem(title: "Browser", image: UIImage(named: "browser"), selectedImage: UIImage(named: "browser"))
         let navController2 = UINavigationController(rootViewController: browserViewController)
         
-        let profilesViewController = ProfilesViewController()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let profilesViewController = storyboard.instantiateViewController(withIdentifier: "profilesVC")
+       
 //        profilesViewController.view.backgroundColor = .white
 //        profilesViewController.title = "Profiles"
         profilesViewController.tabBarItem = UITabBarItem(title: "Profiles", image: UIImage(named: "profiles"), selectedImage: UIImage(named: "profiles"))
@@ -43,7 +49,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabbarController.viewControllers = [navController1, navController2, navController3]
         self.tabbarController = tabbarController
         
-        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
         self.navigationWelcome = storyboard.instantiateViewController(withIdentifier: "idNavigationWelcome") as? UINavigationController
     }
 
